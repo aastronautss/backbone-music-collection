@@ -1,0 +1,26 @@
+{
+  "name": "backbone-music-collection",
+  "version": "1.0.0",
+  "description": "Music collection application",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "jasmine-node spec --autotest --color --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aastronautss/backbone-music-collection.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aastronautss/backbone-music-collection/issues"
+  },
+  "homepage": "https://github.com/aastronautss/backbone-music-collection#readme",
+  "dependencies": {
+    "jasmine-node": "^1.14.5",
+    "node-static": "^0.7.7",
+    "nodemon": "^1.9.2",
+    "request": "^2.72.0"
+  }
+}
