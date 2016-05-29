@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Music Collection</title>
+    <meta charset="UTF-8" />
+
+    <script src="javascripts/vendor/all.js"></script>
+  </head>
+  <body>
+    <h1>Albums</h1>
+    <ul id="albums"></ul>
+
+    <script type="text/x-handlebars" data-name="albums">
+      {{#each albums}}
+        <li>
+          <a href="{{tracks_url}}"><img src="{{cover}}"></a>
+          <h2>{{title}}</h2>
+          <h3>{{artist}}</h3>
+          <p>Released: {{date}}</p>
+        </li>
+      {{/each}}
+    </script>
+
+    <script src="javascripts/models/album.js"></script>
+    <script src="javascripts/collections/albums.js"></script>
+    <script src="javascripts/views/albums.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script type="text/javascript">
+      App.init();
+    </script>
+  </body>
+</html>
